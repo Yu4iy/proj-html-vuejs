@@ -7,6 +7,7 @@
     <ProgramCard/>
     <Posts/>
     <BuyBanner/>
+    <OtherServices/>
   </div>
 </template>
 
@@ -18,6 +19,8 @@ import RegForm from '@/components/RegForm.vue'
 import ProgramCard from '@/components/ProgramCard.vue'
 import Posts from '@/components/Posts.vue'
 import BuyBanner from '@/components/BuyBanner.vue'
+import OtherServices from '@/components/OtherServices.vue'
+
 export default {
   name: 'App',
   components: {
@@ -27,7 +30,8 @@ export default {
     RegForm,
     ProgramCard,
     Posts,
-    BuyBanner
+    BuyBanner,
+    OtherServices
   }
 }
 </script>
