@@ -81,9 +81,10 @@ export default {
 							}
 							.header-button{
 								padding: 15px 30px;
-								background: #4154fe;
+								background: $dodgerBlue;
 								color: $white;
 							}
+							
 							.cart{
 								color: $silver;
 								background: none;
