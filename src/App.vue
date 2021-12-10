@@ -5,6 +5,8 @@
     <Video/>
     <RegForm/>
     <ProgramCard/>
+    <Posts/>
+    <BuyBanner/>
   </div>
 </template>
 
@@ -14,6 +16,8 @@ import Banner from '@/components/Banner.vue'
 import Video from '@/components/Video.vue'
 import RegForm from '@/components/RegForm.vue'
 import ProgramCard from '@/components/ProgramCard.vue'
+import Posts from '@/components/Posts.vue'
+import BuyBanner from '@/components/BuyBanner.vue'
 export default {
   name: 'App',
   components: {
@@ -21,7 +25,9 @@ export default {
     Banner,
     Video,
     RegForm,
-    ProgramCard
+    ProgramCard,
+    Posts,
+    BuyBanner
   }
 }
 </script>

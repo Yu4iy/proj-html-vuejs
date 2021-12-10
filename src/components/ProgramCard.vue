@@ -28,7 +28,7 @@
 
   
     </div>
-
+    
   </section>
 </template>
 
@@ -61,7 +61,7 @@ export default {
       max-width: 400px;
       margin: 10px 10px;
       padding: 70px 40px;
-      border: 3px solid blue;
+      border: 3px solid $dodgerBlue;
       .card__icon{
         color: $white;
         font-size: 4.375rem;
