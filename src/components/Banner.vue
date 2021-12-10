@@ -8,7 +8,7 @@
 				<p class="banner__subtitle"> Voluptatem iure eius quam enim, praesentium animi sint deserunt ipsum a, blanditiis</p>
 				<a class="btn banner__visit"><i class="fab fa-youtube"></i> Visit my YouTube channel</a>
 				<button class="btn banner__buy">Buy Avada today <i class="fas fa-arrow-right"></i></button>
-				<a class="banner__more" href=""><i class="fas fa-play"></i></a>
+				<a class="banner__play play" href=""><i class="fas fa-play"></i></a>
 
 			</div>
 		</div>
@@ -110,15 +110,10 @@ export default {
 				color: $white;
 				border: 3px solid rgba(128, 128, 128, 0.435);
 			}
-			.banner__more{
+			.banner__play{
 				position: absolute;
-				display: flex;
-				justify-content: center;
-				align-items: center;
 				width: 100px;
 				height: 100px;
-				background-color: $white;
-				color: $dodgerBlue;
 				border-radius: 50% ;
 				font-size: 20px;
 				top: 50%;
@@ -129,7 +124,7 @@ export default {
 
 		}
 		.banner-cards{
-			height: 100vh;
+			height: 110vh;
 			background: #0818E4;
 			background: -webkit-linear-gradient(to bottom right, #0818E4 0%, #CE0113 100%);
 			background: -moz-linear-gradient(to bottom right, #0818E4 0%, #CE0113 100%);
