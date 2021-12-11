@@ -84,11 +84,12 @@ export default {
 			width: 50%;
 			position: relative;
 			.poster__play{
+				position: absolute;
 				width: 100px;
 				height: 100px;
 				font-size: 20px;
 				top: 50%;
-				left: 50%;
+				right: 50%;
 				transform: translate(-50%, -50%);
 			}
 			img{

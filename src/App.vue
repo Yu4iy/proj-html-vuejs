@@ -8,6 +8,8 @@
     <Posts/>
     <BuyBanner/>
     <OtherServices/>
+    <AllVideoBanner/>
+    <Footer />
   </div>
 </template>
 
@@ -20,6 +22,10 @@ import ProgramCard from '@/components/ProgramCard.vue'
 import Posts from '@/components/Posts.vue'
 import BuyBanner from '@/components/BuyBanner.vue'
 import OtherServices from '@/components/OtherServices.vue'
+import AllVideoBanner from '@/components/AllVideoBanner.vue'
+import Footer from '@/components/Footer.vue'
+
+
 
 export default {
   name: 'App',
@@ -31,7 +37,10 @@ export default {
     ProgramCard,
     Posts,
     BuyBanner,
-    OtherServices
+    OtherServices,
+    AllVideoBanner,
+    Footer
+   
   }
 }
 </script>

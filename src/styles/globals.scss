@@ -29,32 +29,11 @@
 
 
 // decoration
- .curved-line{
-	width: 60px;
-	position: relative;
-	height: 50px;
-	overflow: hidden;
-	display: block;
-	border-radius: 50px;
-	line-height: 5px;
 
-
-	&::before{
-		content: '....................';
-		text-decoration-color: yellow;
-		font-size: 2rem;
-		position: absolute;
-		left: -13px;
-		color: transparent;
-		text-decoration-style: wavy;
-		text-decoration-line: underline;
-	}
-}
 
 
 
 .play{
-	position: absolute;
 	display: flex;
 	justify-content: center;
 	align-items: center;

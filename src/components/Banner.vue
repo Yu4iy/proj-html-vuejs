@@ -4,7 +4,10 @@
 			<div class="container">
 				<h3 class="banner__txt">Certified fitness professional</h3>
 				<h2 class="banner__title">Take controle of your health</h2>
-				<span class="curved-line banner-line"></span>
+				<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="78" height="39" viewBox="0 0 78 39">
+				<image class="curvedline" id="curvedline" data-name="curvedline" x="3" y="15" width="71" height="12" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEcAAAAMCAYAAAAwL6CwAAADIElEQVRIiWP8//8/AyHw9Old1h9fF9aLi71QYGL6z/T5M/eH1+/cF+noep4gqJkIcOnC1DR52SvWrKx/WH//Zvn98LHOUT2D7FnUMPvK5e0WokI743h5vwr8+8f47+UriQcc3PGN0tLKvwnpJRg4167u05OVWlnGy307Gln87z+5tdduWm7V1U+fT4njH96r7JGTearEyPAkECb2n0Fm/aMn0vfkldpLKDH78sWZiVrqx72ZmR4FI4t//qq69PGz8C4tbadL+PQzNzQ04JREDphvP5SX37pjN/PFa6OV7Gy/P3Nx3osUEf785+rVl9ziEiYXyHH8w3sVPfIypzz+/eN/ff+hwZrHz5wmf/3Kd4Of74OoIP81i4cPrysJCLrsIsds5ID58FF90a37bn1v3irv5eH585GH604UB8dzvrv3uO+Iiim+xGkIKOVgw1ev7NX79C5tyf+fjv9BNIgPU/f48W3Wp4+KpoDk/nyPX3PpwoxEXObgwg/ulvf8/+l45c/3uDWXL/ZnI6sD8UHiIHmwOhLNBrkH5C6Q+0DuBLkXJnf92iENXP5CxyQHDDUCCF/AUBpA+AKGFP9hDRxiNZIbQMQEDLkBREzAkOJPsgOGnAAiJWBIDSBSAoZY/1IUMKQEEDkBQ2wAkRMwxPib4oDBFUAXz09Jg8k9vEd+wGALILB5UHGQPeQGDKEAYgSV3tISS2pA1TWx9T8u8OTJHVam/9P7pcTPOzAwytz6+Yv1NwvzH2Zmpscaf//J3rh+y3C/jl7BVHLMBoErlyZka6qdd4SZ9+cvy192tt+sDP+fqD17aXjgH2NmoYyMCsHGHTaA3GwBhcPTFzEtzDmZaknSEqfdP39V3U1JwIAAH5/QP15+922PHl1X4uP9LMjC/CiEifHT/5+/Fa9ev2W9UVc/ay65ZoOAmLjF6atXnwkICPzgYWV5qMXC/EHsPwPf24ePtE/IKnYWgewn12xQewfU7gG1f3i5bxu8ecv2A5o050XeunlKjpzkjgs/enST48L5RcGXLm6xpqa58Gx2aasFyHxqmwsKB1B4/P//nwEANOq0NL/yKbEAAAAASUVORK5CYII="/>
+				</svg>
+
 				<p class="banner__subtitle"> Voluptatem iure eius quam enim, praesentium animi sint deserunt ipsum a, blanditiis</p>
 				<a class="btn banner__visit"><i class="fab fa-youtube"></i> Visit my YouTube channel</a>
 				<button class="btn banner__buy">Buy Avada today <i class="fas fa-arrow-right"></i></button>
@@ -21,7 +24,10 @@
 						<img src="../assets/card1.jpg" alt="">
 					</div>
 					<div class="info">
-						<span class="curved-line info-line"></span>
+						<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="63" height="17" viewBox="0 0 63 17">
+						<image id="curvedWline" data-name="curvedWline" x="3" y="4" width="55" height="9" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAADcAAAAJCAYAAACWq7SbAAABSUlEQVQ4jaXUy0rEMBQG4NMwzmx8BJ/NN/Bd9D0UNyLuFFwqqBsRdHAQRVTw0to2aS6/RCdDKL0kMRBa0uTnfGlaAjDUV80Y6JG5vZ1zPPpZjcRBSo42OMZfLcZea46Hofmdg8ZgxxUiGrxLidyrLaqgosTcLlIKwkeKBicxOUrh0tto2UhU9r6s8ByM82FKYc+NS4n9WKCD5QXOW89c/k0szB//KnA2BAyCpQDL6vfIWNhFz5wgYB+sDeQCH724MVgMUKnlkSlxPbIJg8AxmOs1x10XMAoWCEQgbBAYCvNzPnPU/vxoWBfQGGzbMa0hYr9LH6g1Xpc5T//JqWq8uTcXDVsBFXbRalxgEZvjCnO/eHdNydEahV34XeI2EwL3kwmdMkablNhEQ1dEtD5do8Mso63UHANaCEF6NqUZY7SRmlPVdMQYvfwAzQm6VLrW5ekAAAAASUVORK5CYII="/>
+						</svg>
+
 						<h4 class="info__title">Crossfit workout</h4>
 						<h5 class="info__subtitle">Push your limits</h5>
 					</div>
@@ -32,7 +38,9 @@
 						<img src="../assets/card2.jpg" alt="">
 					</div>
 					<div class="info">
-						<span class="curved-line info-line"></span>
+						<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="63" height="17" viewBox="0 0 63 17">
+						<image id="curvedWline" data-name="curvedWline" x="3" y="4" width="55" height="9" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAADcAAAAJCAYAAACWq7SbAAABSUlEQVQ4jaXUy0rEMBQG4NMwzmx8BJ/NN/Bd9D0UNyLuFFwqqBsRdHAQRVTw0to2aS6/RCdDKL0kMRBa0uTnfGlaAjDUV80Y6JG5vZ1zPPpZjcRBSo42OMZfLcZea46Hofmdg8ZgxxUiGrxLidyrLaqgosTcLlIKwkeKBicxOUrh0tto2UhU9r6s8ByM82FKYc+NS4n9WKCD5QXOW89c/k0szB//KnA2BAyCpQDL6vfIWNhFz5wgYB+sDeQCH724MVgMUKnlkSlxPbIJg8AxmOs1x10XMAoWCEQgbBAYCvNzPnPU/vxoWBfQGGzbMa0hYr9LH6g1Xpc5T//JqWq8uTcXDVsBFXbRalxgEZvjCnO/eHdNydEahV34XeI2EwL3kwmdMkablNhEQ1dEtD5do8Mso63UHANaCEF6NqUZY7SRmlPVdMQYvfwAzQm6VLrW5ekAAAAASUVORK5CYII="/>
+						</svg>
 						<h4 class="info__title">Crossfit workout</h4>
 						<h5 class="info__subtitle">Push your limits</h5>
 					</div>
@@ -42,7 +50,9 @@
 						<img src="../assets/card3.jpg" alt="">
 					</div>
 					<div class="info">
-						<span class="curved-line info-line"></span>
+						<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="63" height="17" viewBox="0 0 63 17">
+						<image id="curvedWline" data-name="curvedWline" x="3" y="4" width="55" height="9" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAADcAAAAJCAYAAACWq7SbAAABSUlEQVQ4jaXUy0rEMBQG4NMwzmx8BJ/NN/Bd9D0UNyLuFFwqqBsRdHAQRVTw0to2aS6/RCdDKL0kMRBa0uTnfGlaAjDUV80Y6JG5vZ1zPPpZjcRBSo42OMZfLcZea46Hofmdg8ZgxxUiGrxLidyrLaqgosTcLlIKwkeKBicxOUrh0tto2UhU9r6s8ByM82FKYc+NS4n9WKCD5QXOW89c/k0szB//KnA2BAyCpQDL6vfIWNhFz5wgYB+sDeQCH724MVgMUKnlkSlxPbIJg8AxmOs1x10XMAoWCEQgbBAYCvNzPnPU/vxoWBfQGGzbMa0hYr9LH6g1Xpc5T//JqWq8uTcXDVsBFXbRalxgEZvjCnO/eHdNydEahV34XeI2EwL3kwmdMkablNhEQ1dEtD5do8Mso63UHANaCEF6NqUZY7SRmlPVdMQYvfwAzQm6VLrW5ekAAAAASUVORK5CYII="/>
+						</svg>
 						<h4 class="info__title">Crossfit workout</h4>
 						<h5 class="info__subtitle">Push your limits</h5>
 					</div>
@@ -50,7 +60,10 @@
 			</div>
 			<div class="quote">
 					<p class="quote__txt">"  Senetur accusantium? Consequuntur eius suscipit dolores id, sequi aperiam similique asperiores mollitia, nemo sed provident dicta dolor. Voluptatum, fugiat? "</p>
-					<span class="curved-line quote-line"></span>
+					<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="78" height="39" viewBox="0 0 78 39">
+					<image id="curvedYline" data-name="Слой 1" x="3" y="15" width="71" height="12" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEcAAAAMCAYAAAAwL6CwAAADIElEQVRIiWP8//8/AyHw9Old1h9fF9aLi71QYGL6z/T5M/eH1+/cF+noep4gqJkIcOnC1DR52SvWrKx/WH//Zvn98LHOUT2D7FnUMPvK5e0WokI743h5vwr8+8f47+UriQcc3PGN0tLKvwnpJRg4167u05OVWlnGy307Gln87z+5tdduWm7V1U+fT4njH96r7JGTearEyPAkECb2n0Fm/aMn0vfkldpLKDH78sWZiVrqx72ZmR4FI4t//qq69PGz8C4tbadL+PQzNzQ04JREDphvP5SX37pjN/PFa6OV7Gy/P3Nx3osUEf785+rVl9ziEiYXyHH8w3sVPfIypzz+/eN/ff+hwZrHz5wmf/3Kd4Of74OoIP81i4cPrysJCLrsIsds5ID58FF90a37bn1v3irv5eH585GH604UB8dzvrv3uO+Iiim+xGkIKOVgw1ev7NX79C5tyf+fjv9BNIgPU/f48W3Wp4+KpoDk/nyPX3PpwoxEXObgwg/ulvf8/+l45c/3uDWXL/ZnI6sD8UHiIHmwOhLNBrkH5C6Q+0DuBLkXJnf92iENXP5CxyQHDDUCCF/AUBpA+AKGFP9hDRxiNZIbQMQEDLkBREzAkOJPsgOGnAAiJWBIDSBSAoZY/1IUMKQEEDkBQ2wAkRMwxPib4oDBFUAXz09Jg8k9vEd+wGALILB5UHGQPeQGDKEAYgSV3tISS2pA1TWx9T8u8OTJHVam/9P7pcTPOzAwytz6+Yv1NwvzH2Zmpscaf//J3rh+y3C/jl7BVHLMBoErlyZka6qdd4SZ9+cvy192tt+sDP+fqD17aXjgH2NmoYyMCsHGHTaA3GwBhcPTFzEtzDmZaknSEqfdP39V3U1JwIAAH5/QP15+922PHl1X4uP9LMjC/CiEifHT/5+/Fa9ev2W9UVc/ay65ZoOAmLjF6atXnwkICPzgYWV5qMXC/EHsPwPf24ePtE/IKnYWgewn12xQewfU7gG1f3i5bxu8ecv2A5o050XeunlKjpzkjgs/enST48L5RcGXLm6xpqa58Gx2aasFyHxqmwsKB1B4/P//nwEANOq0NL/yKbEAAAAASUVORK5CYII="/>
+					</svg>
+
 					<div class="profile">
 						<img class="profile__img" src="../assets/avatar-1-2x.jpg" alt="">
 						<h6 class="profile__name">Brad Johnson</h6>
@@ -76,8 +89,8 @@ export default {
 <style scoped lang="scss">
 	@import "@/styles/variables.scss";
 	section{
-		background-image: url('../assets/ban.jpg');
-		background-size: cover;
+		background-image: url('../assets/banners.jpg');
+		background-size: contain;
 		background-repeat: no-repeat;
 		.banner{
 			position: relative;
@@ -121,6 +134,7 @@ export default {
 				transform: translatey(-50%);
 			
 			}
+			
 
 		}
 		.banner-cards{
@@ -228,5 +242,6 @@ export default {
 			
 		}
 	}
+
 			
 </style>
