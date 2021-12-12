@@ -8,7 +8,7 @@
 				</svg>
 
 				<p class="buy-banner__txt"> Quibusdam dignissimos dolores architecto pariatur quia consectetur, nobis voluptatibus quis ex numquam molestiae dolorum laborum aperiam obcaecati harum dolor dolore nihil delectus.</p>
-				<button class="btn buy-banner-btn">Buy Avada Today ></button>
+				<button class="btn buy-banner-btn">Buy Avada Today <i class="fas fa-angle-right"></i></button>
 			</div>
 		</div>
 	</section>
@@ -52,10 +52,12 @@ export default {
 					.buy-banner__title{
 						font-size: 2.5rem;
 						color: $white;
+						margin-bottom: 20px ;
 					}
 					.buy-banner__txt{
 						color: $white;
-						margin-bottom: 30px;
+						margin: 30px 0;
+
 
 						
 					}
@@ -64,6 +66,12 @@ export default {
 						padding: 20px 40px;
 						background: $dodgerBlue;
 						color: $white;
+						transition: linear 0.2s;
+						cursor: pointer;
+						&:hover{
+							background: $monza;
+							
+						}
 
 					}
 					

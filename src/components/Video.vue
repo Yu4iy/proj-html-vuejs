@@ -117,6 +117,9 @@ export default {
 					height: 50px;
 					font-size: 10px;
 					position: absolute;
+					&:hover{
+						color: $monza;
+					}
 				}
 			}
 
@@ -127,6 +130,7 @@ export default {
 
 	.top{
 			display: flex;
+			flex-wrap: wrap;
 			.poster{
 				display: flex;
 				justify-content: center;
@@ -138,6 +142,9 @@ export default {
 					width: 100px;
 					height: 100px;
 					font-size: 20px;
+					&:hover{
+						color: $monza;
+					}
 					
 				}
 				img{
@@ -176,6 +183,7 @@ export default {
 								border: 1px solid red;
 								padding: 5px 8px;
 								color: white;
+								
 							}
 							span{
 								background-color: #fafafa;
@@ -199,6 +207,10 @@ export default {
 					background: red;
 					color: #fff;
 					margin: 35px 0 0 0;
+					transition: linear 0.2s;
+					&:hover{
+						background: rgb(189, 12, 12);
+					}
 				}
 
 			}
@@ -208,6 +220,10 @@ export default {
 				display: flex;
 				justify-content: space-between;
 				margin: 130px 0 0 0 ;
+				.title__show-btn{
+					border: none;
+					background: none;
+				}
 		}
 	
 </style>

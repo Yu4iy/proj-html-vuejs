@@ -7,7 +7,7 @@
           <h2 class="card__title">Team training</h2>
           <h3 class="card__subtitle">Find a parthner</h3>
           <p class="card__txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi praesentium soluta, molestiae consectetur</p>
-          <a class="card__more" href="">Find a parthner ></a>
+          <a class="card__more" href="">Find a parthner <i class="fas fa-angle-right"></i></a>
       </div>
 
       <div class="card">
@@ -15,7 +15,7 @@
           <h2 class="card__title">Team training</h2>
           <h3 class="card__subtitle">Find a parthner</h3>
           <p class="card__txt">Lorem ipsum dolor sit amet consecteturLorem ipsum dolor sit amet consecteturLorem ipsum dolor sit amet consectetur adipisicing elit. Quasi praesentium soluta, molestiae consectetur</p>
-          <a class="card__more" href="">Find a parthner ></a>
+          <a class="card__more" href="">Find a parthner <i class="fas fa-angle-right"></i></a>
       </div>
 
       <div class="card">
@@ -23,7 +23,7 @@
           <h2 class="card__title">Team training</h2>
           <h3 class="card__subtitle">Find a parthner</h3>
           <p class="card__txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi praesentium soluta, molestiae consectetur</p>
-          <a class="card__more" href="">Find a parthner ></a>
+          <a class="card__more" href="">Find a parthner <i class="fas fa-angle-right"></i></a>
       </div>
 
   
@@ -62,6 +62,11 @@ export default {
       margin: 10px 10px;
       padding: 70px 40px;
       border: 3px solid $dodgerBlue;
+      transition: linear 0.2s;
+      &:hover{
+        scale: 1.02;
+        
+      }
       .card__icon{
         color: $white;
         font-size: 4.375rem;

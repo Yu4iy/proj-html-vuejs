@@ -71,18 +71,21 @@ export default {
 					input{
 						flex-grow: 1;
 						max-width: 580px;
-						height: 55px;
+						height: 45px;
 
 					}
 					button{
 						flex-grow: 1;
-						height: 55px;
-						padding: 20px 0;
+						height: 45px;
 						max-width: 270px;
 
 						color: $white;
 						background-color: $dodgerBlue;
 						margin: 0 0 0 35px;
+						transition: linear 0.2s;
+						&:hover{
+							background: $monza;
+						}
 					}
 				}
 					.form-banner__txt{

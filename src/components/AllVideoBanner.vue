@@ -4,7 +4,7 @@
 			<a class="video__play play" href=""><i class="fas fa-play"></i></a>
 			<h2 class="video-banner__title">Crossfit workout of the day</h2>
 			<h3 class="video-banner__date">November 15th, 2019</h3>
-			<a class="video-banner__link" href="">View all videos</a>
+			<a class="video-banner__link" href="">View all videos <i class="fas fa-angle-right"></i></a>
 		</div>
 	</section>
 </template>
@@ -47,6 +47,11 @@ export default {
 				font-size: 20px;
 				right: 50%;
 				transform: translatey(-50%);
+				transition: linear 0.2S;
+				&:hover{
+					color: $monza;
+					
+				}
 			}
 			.video-banner__title{
 				font-size: 2.5rem;

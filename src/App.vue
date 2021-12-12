@@ -1,16 +1,16 @@
 <template>
   <div id="app">
-    <Header/>
+    <Header :headerData = "headerData"/>
     <Banner/>
     <BannerCard/>
     <Video/>
     <RegForm/>
     <ProgramCard/>
-    <Posts/>
+    <Posts :posts = "posts"/>
     <BuyBanner/>
     <OtherServices/>
     <AllVideoBanner/>
-    <Footer />
+    <Footer :footerData = "footerData"/>
   </div>
 </template>
 
@@ -27,10 +27,25 @@ import OtherServices from '@/components/OtherServices.vue'
 import AllVideoBanner from '@/components/AllVideoBanner.vue'
 import Footer from '@/components/Footer.vue'
 
+import data from "./data";
 
 
 export default {
   name: 'App',
+  data() {
+    return {
+      posts:[],
+      headerData:[],
+      footerData:{},
+      datas:{},
+    };
+	},
+  mounted(){
+    this.getData()
+    this.getHeader()  
+    this.getFooter()
+    this.getPosts()
+    },
   components: {
     Header,
     Banner,
@@ -42,8 +57,24 @@ export default {
     OtherServices,
     AllVideoBanner,
     Footer,
-    BannerCard
+    BannerCard,
+    
    
+  },
+  methods:  {
+    getData(){
+      this.datas = data
+    },
+    getHeader(){
+      this.headerData = this.datas.header
+    },
+    getFooter(){
+      this.footerData = this.datas.footer
+    },
+    getPosts(){
+      this.posts = this.datas.posts
+      
+    }
   }
 }
 </script>

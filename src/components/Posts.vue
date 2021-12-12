@@ -2,39 +2,23 @@
 	<section>
 		<div class="container">
 			<div class="title">
-				<h2 class="title__txt">Featured playlist</h2>
-				<button class="title__show-btn">view all videos ></button>
+				<h2 class="title__txt">Latest Articles</h2>
+				<button class="title__show-btn">Read all articles <i class="fas fa-angle-right"></i></button>
 			</div>
 		</div>
 		<div class="cards">
 
 			<div class="container">
-				<div class="card">
+				<div class="card" v-for="(elem,index) in posts" :key= 'index'>
 						<div class="card__img">
-							<img src="../assets/video7-2x.jpg" alt="">
+							<img :src="require(`../assets/${elem.img}.jpg`)" alt="card" />
 						</div>
 						
-						<h3 class="card__title">Thighs & glute workout</h3>
-						<div class="card__date">Increase your mobility</div>
+						<h3 class="card__title">{{elem.title}}</h3>
+						<div class="card__date">{{elem.postedBy}} | {{elem.date}} | {{elem.article}}</div>
 				</div>
 
-				<div class="card">
-						<div class="card__img">
-							<img src="../assets/video2-2x.jpg" alt="">
-						</div>
-						
-						<h3 class="card__title">Thighs & glute workout</h3>
-						<div class="card__date">Increase your mobility</div>
-				</div>
 
-				<div class="card">
-						<div class="card__img">
-							<img src="../assets/video7-2x.jpg" alt="">
-						</div>
-						
-						<h3 class="card__title">Thighs & glute workout</h3>
-						<div class="card__date">Increase your mobility</div>
-				</div>
 			</div>
 	</div>
 	</section>		
@@ -44,7 +28,7 @@
 export default {
 
   props: {
-   
+	posts:Array
   }
 }
 </script>
@@ -67,16 +51,35 @@ export default {
 		flex-direction: column;
 		max-width: 400px;
 		margin: 10px 10px;
+		
 		.card__img{
 				position: relative;
 				display: flex;
 				justify-content: center;
 				align-items: center;
+				position: relative;
+				
+					&::after{
+						content: ' ';
+						background: rgb(0,0,0);
+						background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(84, 101, 199, 0) 100%);
+						width: 100%;
+						height: 100%;
+						position: absolute;
+						border-radius:  5px;
+					}
+						&:hover::after{
+							background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(84, 101, 199, 0.733) 100%);
+
+							
+						}
+				
 				img{
 					max-height: 250px;
 					object-fit: cover;
 					width: 100%;
 					border-radius: 5px;
+					
 	
 				}
 
@@ -97,6 +100,10 @@ export default {
 			display: flex;
 			justify-content: space-between;
 			margin: 100px 0 40px 0 ;
+			.title__show-btn{
+					border: none;
+					background: none;
+				}
 	}
 
 </style>
