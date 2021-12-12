@@ -29,38 +29,48 @@ export default {
 	section{
 		background-image: url('../assets/banner2-2x.jpg');
 		background-size: cover;
-		background-repeat: no-repeat;
-		
+		width: 100%;
+		height: 640px;
+		background-position: center;
+		overflow: hidden;
+
 		.buy-banner{
-			padding: 150px 0;
 			display: flex;
+			align-items: center;
 			justify-content: center;
+			flex-direction: column;
+			width: 100%;
+			height: 100%;
+			position: relative;
 			background: #000000;
 			background: -webkit-linear-gradient(to top, #000000 2%, #ffffff00 100%);
 			background: -moz-linear-gradient(to top, #000000 2%, #ffffff00 100%);
 			background: linear-gradient(to top, #000000 2%, #ffffff00 100%);
-			.wraper{
-				text-align: center;
-				max-width: 780px;
-				.buy-banner__title{
-					font-size: 2.5rem;
-					color: $white;
-				}
-				.buy-banner__txt{
-					color: $white;
-					margin-bottom: 30px;
+				.wraper{
+					text-align: center;
+					max-width: 780px;
+					.buy-banner__title{
+						font-size: 2.5rem;
+						color: $white;
+					}
+					.buy-banner__txt{
+						color: $white;
+						margin-bottom: 30px;
 
+						
+					}
+
+					.buy-banner-btn{
+						padding: 20px 40px;
+						background: $dodgerBlue;
+						color: $white;
+
+					}
 					
-				}
-
-				.buy-banner-btn{
-					padding: 20px 40px;
-					background: $dodgerBlue;
-					color: $white;
-
-				}
 				
 			}
+
 		}
-	}
+	}	
+
 </style>

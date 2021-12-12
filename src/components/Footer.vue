@@ -28,12 +28,14 @@
 					<h2>Recent posts</h2>
 					<address>
 						<div class="adress">4746 Tipple Road Micighan 48449</div>
-						<div class="mobile">Mobile:<a href="tel:+74951234567">1.800.000.000.0000</a></div>
-						<div class="mail">Email:<a href="mailto:info@your-company.com">info@your-company.com</a></div>
-						
-						
+						<div class="mobile">Mobile: <a href="tel:+74951234567">1.800.000.000.0000</a></div>
+						<div class="mail">Email: <a href="mailto:info@your-company.com">info@your-company.com</a></div>
 					</address> 	
 				</div>
+		</div>
+		<hr>
+		<div class="copy">
+			&copy; Copyright
 		</div>
 	</section>
 </template>
@@ -52,13 +54,14 @@ export default {
 @import "@/styles/variables.scss";
 	section{
 		background: $codGray;
-		padding-top: 130px ;
-		padding-bottom: 100px ;
 
-		>div{
+		.container{
+			padding: 130px 100px ;
 			display: flex;
-				align-items: baseline;
-				color: #fff;
+			flex-wrap: wrap;
+			justify-content: center;
+			align-items: baseline;
+			color: #fff;
 
 			.column{
 				display: flex;
@@ -67,6 +70,7 @@ export default {
 				align-items: center;
 				text-align: center;
 				width: calc(100% / 3);
+				min-width: 350px;
 				padding: 5px 15px;
 				h2{
 					text-transform: uppercase;
@@ -112,6 +116,11 @@ export default {
 			.icons{
 				color: $monza;
 			}
+		}
+		.copy{
+			padding: 50px 0;
+			text-align: center;
+			color: $white;
 		}
 
 	}

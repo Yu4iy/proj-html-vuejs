@@ -7,7 +7,6 @@
 			<a class="video-banner__link" href="">View all videos</a>
 		</div>
 	</section>
-	foo
 </template>
 
 <script>

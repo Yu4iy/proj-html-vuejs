@@ -2,6 +2,7 @@
   <div id="app">
     <Header/>
     <Banner/>
+    <BannerCard/>
     <Video/>
     <RegForm/>
     <ProgramCard/>
@@ -16,6 +17,7 @@
 <script>
 import Header from '@/components/Header.vue'
 import Banner from '@/components/Banner.vue'
+import BannerCard from '@/components/BannerCard.vue'
 import Video from '@/components/Video.vue'
 import RegForm from '@/components/RegForm.vue'
 import ProgramCard from '@/components/ProgramCard.vue'
@@ -39,7 +41,8 @@ export default {
     BuyBanner,
     OtherServices,
     AllVideoBanner,
-    Footer
+    Footer,
+    BannerCard
    
   }
 }
