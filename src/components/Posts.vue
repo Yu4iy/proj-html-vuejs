@@ -9,7 +9,7 @@
 		<div class="cards">
 
 			<div class="container">
-				<div class="card" v-for="(elem,index) in posts" :key= 'index'>
+				<div class="card box" v-scroll="handleScroll" v-for="(elem,index) in posts" :key= 'index'>
 						<div class="card__img">
 							<img :src="require(`../assets/${elem.img}.jpg`)" alt="card" />
 						</div>
@@ -26,7 +26,17 @@
 
 <script>
 export default {
-
+    methods: {
+    handleScroll: function (evt, el) {
+      if (window.scrollY > 3700) {
+        el.setAttribute(
+          'style',
+          'opacity: 1; transform: translateX(0px)'
+        )
+      }
+      return window.scrollY > 20000
+    }
+  },
   props: {
 	posts:Array
   }
@@ -52,6 +62,7 @@ export default {
         justify-content: center;
     }
     .card{
+		transform: translateX(50px);
 		display: flex;
 		text-align: center;
 		flex-direction: column;
@@ -109,9 +120,11 @@ export default {
 			justify-content: space-between;
 			margin: 100px 0 40px 0 ;
 			padding: 10px;
+
 			.title__show-btn{
 					border: none;
 					background: none;
+					font-weight: 600;
 				}
 	}
 

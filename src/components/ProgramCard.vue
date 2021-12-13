@@ -1,6 +1,6 @@
 <template>
-	<section class="program" >
-    <div class="container">
+	<section class="program">
+    <div class="container  box" v-scroll="handleScroll" >
 
       <div class="card">
           <i  class="card__icon fas fa-stopwatch"></i> 
@@ -34,7 +34,17 @@
 
 <script>
 export default {
-
+    methods: {
+    handleScroll: function (evt, el) {
+      if (window.scrollY > 3500) {
+        el.setAttribute(
+          'style',
+          'opacity: 1; transform: translateX(0px)'
+        )
+      }
+      return window.scrollY > 20000
+    }
+  },
   props: {
    
   }
@@ -47,11 +57,13 @@ export default {
   section{
         background-color: black;
         padding: 100px 0;
+        
 
     >div{
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+        transform: translatex(-50px);
     }
     .card{
       display: flex;
@@ -94,5 +106,6 @@ export default {
       }
     }
   }
+
   
 </style>

@@ -1,6 +1,6 @@
 <template>
 	<section>
-		<div class="card">
+		<div class="card box"  v-scroll="handleScroll">
 				<div class="banner-card__img">
 					<div class="img-wraper">
 						<img src="../assets/card1.jpg" alt="">
@@ -18,7 +18,7 @@
 								
 		</div>
 
-		<div class="card">
+		<div class="card box"  v-scroll="handleScroll">
 				<div class="banner-card__img">
 					<div class="img-wraper">
 						<img src="../assets/card2.jpg" alt="">
@@ -36,7 +36,7 @@
 								
 		</div>
 
-		<div class="card">
+		<div class="card box"  v-scroll="handleScroll">
 				<div class="banner-card__img">
 					<div class="img-wraper">
 						<img src="../assets/card3.jpg" alt="">
@@ -55,8 +55,8 @@
 		</div>
 
 
-		<div class="quote">
-			<p class="quote__txt">"Suscipit dolores id, sequi aperiam similique asperiores mollitia, nemo sed provident dicta dolor. Voluptatum, fugiat? "</p>
+		<div class="quote box"  v-scroll="handleScroll">
+			<p class="quote__txt box"  v-scroll="handleScroll" >"Suscipit dolores id, sequi aperiam similique asperiores mollitia, nemo sed provident dicta dolor. Voluptatum, fugiat? "</p>
 			<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="78" height="39" viewBox="0 0 78 39">
 			<image id="curvedYline" data-name="Слой 1" x="3" y="15" width="71" height="12" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEcAAAAMCAYAAAAwL6CwAAADIElEQVRIiWP8//8/AyHw9Old1h9fF9aLi71QYGL6z/T5M/eH1+/cF+noep4gqJkIcOnC1DR52SvWrKx/WH//Zvn98LHOUT2D7FnUMPvK5e0WokI743h5vwr8+8f47+UriQcc3PGN0tLKvwnpJRg4167u05OVWlnGy307Gln87z+5tdduWm7V1U+fT4njH96r7JGTearEyPAkECb2n0Fm/aMn0vfkldpLKDH78sWZiVrqx72ZmR4FI4t//qq69PGz8C4tbadL+PQzNzQ04JREDphvP5SX37pjN/PFa6OV7Gy/P3Nx3osUEf785+rVl9ziEiYXyHH8w3sVPfIypzz+/eN/ff+hwZrHz5wmf/3Kd4Of74OoIP81i4cPrysJCLrsIsds5ID58FF90a37bn1v3irv5eH585GH604UB8dzvrv3uO+Iiim+xGkIKOVgw1ev7NX79C5tyf+fjv9BNIgPU/f48W3Wp4+KpoDk/nyPX3PpwoxEXObgwg/ulvf8/+l45c/3uDWXL/ZnI6sD8UHiIHmwOhLNBrkH5C6Q+0DuBLkXJnf92iENXP5CxyQHDDUCCF/AUBpA+AKGFP9hDRxiNZIbQMQEDLkBREzAkOJPsgOGnAAiJWBIDSBSAoZY/1IUMKQEEDkBQ2wAkRMwxPib4oDBFUAXz09Jg8k9vEd+wGALILB5UHGQPeQGDKEAYgSV3tISS2pA1TWx9T8u8OTJHVam/9P7pcTPOzAwytz6+Yv1NwvzH2Zmpscaf//J3rh+y3C/jl7BVHLMBoErlyZka6qdd4SZ9+cvy192tt+sDP+fqD17aXjgH2NmoYyMCsHGHTaA3GwBhcPTFzEtzDmZaknSEqfdP39V3U1JwIAAH5/QP15+922PHl1X4uP9LMjC/CiEifHT/5+/Fa9ev2W9UVc/ay65ZoOAmLjF6atXnwkICPzgYWV5qMXC/EHsPwPf24ePtE/IKnYWgewn12xQewfU7gG1f3i5bxu8ecv2A5o050XeunlKjpzkjgs/enST48L5RcGXLm6xpqa58Gx2aasFyHxqmwsKB1B4/P//nwEANOq0NL/yKbEAAAAASUVORK5CYII="/>
 			</svg>
@@ -72,7 +72,17 @@
 
 <script>
 export default {
-  
+    methods: {
+    handleScroll: function (evt, el) {
+      if (window.scrollY > 400) {
+        el.setAttribute(
+          'style',
+          'opacity: 1; transform: translateX(0px)'
+        )
+      }
+      return window.scrollY > 20000
+    }
+  },
   props: {
     
   }
@@ -83,6 +93,7 @@ export default {
 
 <style scoped lang="scss">
 	@import "@/styles/variables.scss";
+		
 	section{
 		background: #0818E4;
 		background: -webkit-linear-gradient(to bottom right, #0818E4 0%, #CE0113 100%);
@@ -100,6 +111,7 @@ export default {
 		flex-direction: column;
 		max-width: 400px;
 		margin: -70px 20px 20px 20px;
+		transform: translateX(50px);
 		@media screen and (max-width: 1320px) {
 					&{
 						margin-top: 20px ;
@@ -169,6 +181,8 @@ export default {
 			flex-direction: column;
 			text-align: center;
 			width: 100%;
+			transform: translateY(60px);
+
 			@media screen and (max-width: 1050px) {
 					margin: 60px 0 100px 0 ;
 

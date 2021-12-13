@@ -1,6 +1,6 @@
 <template>
 	<section>
-		<div class="banner">
+		<div class="banner box" v-scroll="handleScroll">
 			<div class="container">
 				<div class="wraper">
 					<h2 class="form-banner__subtitle">Join our mailing list today</h2>
@@ -23,7 +23,17 @@
 
 <script>
 export default {
-
+    methods: {
+    handleScroll: function (evt, el) {
+      if (window.scrollY > 2800) {
+        el.setAttribute(
+          'style',
+          'opacity: 1; transform: translateX(0px)'
+        )
+      }
+      return window.scrollY > 20000
+    }
+  },		
   props: {
   
   }
@@ -48,6 +58,7 @@ export default {
 			height: 100%;
 			position: relative;
 			background: linear-gradient(to right, #000000, #000000, #000000ce, #b9b9b900, #ffffff00);
+			transform: translateX(50px);
 			.container{
 				height: 100%;
 				display: flex;

@@ -5,7 +5,7 @@
 				<img src="../assets/service.jpg" alt="">
 				<a class="poster__play play" href=""><i class="fas fa-play"></i></a>
 			</div>
-			<div class="yt-ref">
+			<div class="yt-ref box" v-scroll="handleScroll">
 				<h2 class="yt-ref__desc">Tune up your workouts</h2>
 				<h3 class="yt-ref__title">Yhe best health & fitness advice online</h3>
 				<div class="yt-ref__profile">
@@ -34,10 +34,10 @@
 			<button class="title__show-btn">view all videos ></button>
 		</div>
 	</div>
-	<div class="cards">
+	<div class="cards box" v-scroll="handleScroll">
 
 		<div class="container">
-			<div class="card">
+			<div class="card ">
 					<div class="card__img">
 								<img class="card__img" src="../assets/video2-2x.jpg" alt="">
 								<a class="card__play play" href=""><i class="fas fa-play"></i></a>
@@ -73,7 +73,17 @@
 
 <script>
 export default {
- 
+    methods: {
+    handleScroll: function (evt, el) {
+      if (window.scrollY > 1600) {
+        el.setAttribute(
+          'style',
+          'opacity: 1; transform: translateX(0px)'
+        )
+      }
+      return window.scrollY > 20000
+    }
+  }, 
   props: {
    
   }
@@ -86,6 +96,7 @@ export default {
 
 	.cards{
         padding: 100px 0 160px 0;
+		transform: translateX(-40px);
 		@media screen and (max-width: 950px) {
 			&{
 				padding: 0 0 20px 0;
@@ -167,6 +178,7 @@ export default {
 			.yt-ref{
 				width: 50%;
 				padding: 130px 100px 130px;
+				transform: translateX(-30px);
 				@media screen and (max-width: 1080px) {
 					&{
 						width: 100%;
@@ -277,6 +289,7 @@ export default {
 				.title__show-btn{
 					border: none;
 					background: none;
+					font-weight: 600;
 				}
 		}
 	
