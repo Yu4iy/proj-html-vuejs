@@ -70,18 +70,19 @@ const data = {
 		},
 		{
 			img:"video2-2x",
-			title:"The best protein Shake",
+			title:"Utimate cardio Workout",
 			postedBy:'admin',
 			date:"November 26th, 2019",
 			article:"Gym"
 		},
 		{
 			img:"video9-2x",
-			title:"The best protein Shake",
+			title:"20 healthy recipes",
 			postedBy:'admin',
 			date:"November 26th, 2019",
 			article:"Gym"
 		},
+		
 	]
 
 }

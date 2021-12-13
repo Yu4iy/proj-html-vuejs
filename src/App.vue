@@ -10,7 +10,10 @@
     <BuyBanner/>
     <OtherServices/>
     <AllVideoBanner/>
-    <Footer :footerData = "footerData"/>
+    <Footer 
+    :footerData = "footerData"
+    :posts = "posts"
+    />
   </div>
 </template>
 

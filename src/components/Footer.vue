@@ -16,11 +16,7 @@
 				<div class=" column column-posts">
 					<h2>Recent posts</h2>
 					<ul>
-						<li><i class="fas fa-angle-right"> </i> The best protein shake</li>
-						<li><i class="fas fa-angle-right"> </i> The best protein shake</li>
-						<li><i class="fas fa-angle-right"> </i> The best protein shake</li>
-						<li><i class="fas fa-angle-right"> </i> The best protein shake</li>
-						<li><i class="fas fa-angle-right"> </i> The best protein shake</li>
+						<li v-for="(elem,index) in posts" :key= 'index' ><i class="fas fa-angle-right"> </i> {{elem.title}}</li>
 					</ul>
 				</div>
 
@@ -44,7 +40,10 @@
 export default {
 
   props: {
-	footerData:Object
+	footerData:Object,
+	posts:Array
+				
+
   }
 }
 </script>
