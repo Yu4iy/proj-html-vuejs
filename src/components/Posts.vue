@@ -39,6 +39,12 @@ export default {
 
 .cards{
         padding: 0 0 130px 0;
+		@media screen and (max-width: 1260px) {
+			&{
+				padding: 0 0 30px 0;
+
+					}
+				}
 
     >div{
         display: flex;
@@ -62,15 +68,17 @@ export default {
 					&::after{
 						content: ' ';
 						background: rgb(0,0,0);
-						background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(84, 101, 199, 0) 100%);
+						background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(84, 101, 199, 0.671) 100%);
 						width: 100%;
 						height: 100%;
 						position: absolute;
 						border-radius:  5px;
+						opacity: 0;
+						transition: linear 0.2s;
+						
 					}
 						&:hover::after{
-							background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(84, 101, 199, 0.733) 100%);
-
+							opacity: 1;
 							
 						}
 				
@@ -100,6 +108,7 @@ export default {
 			display: flex;
 			justify-content: space-between;
 			margin: 100px 0 40px 0 ;
+			padding: 10px;
 			.title__show-btn{
 					border: none;
 					background: none;

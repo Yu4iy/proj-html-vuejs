@@ -53,14 +53,17 @@ export default {
 		background-size: cover;
 		width: 100%;
 		height: 670px;
-		background-position: center;
+		background-position: right ;
 		overflow: hidden;
+		
 
 		.banner{
 			width: 100%;
 			height: 100%;
 			position: relative;
 			background-image: linear-gradient(to right, #000000, #000000, #000000db, #00000000, #ffffff00);
+			padding: 0 20px;
+
 			.container{
 				height: 100%;
 				display: flex;
@@ -70,28 +73,44 @@ export default {
 			.banner__txt{
 				color: $monza;
 				font-size: 1.25rem;
+				@media screen and (max-width: 1050px) {
+					&{
+						font-size: 0.9rem;
+					}
+				}
 			}
 			.banner__title{
 				color: $white;
 				font-size: 3.125rem;
 				margin: 35px 0;
+				@media screen and (max-width: 1050px) {
+					&{
+						margin: 15px 0;
+						font-size: 2.2rem;
+					}
+				}
 
 			}
 			.banner__subtitle{
 				color: $silver;
 				font-size: 16px;
 				margin: 35px 0;
+				@media screen and (max-width: 1050px) {
+					&{
+						margin: 5px 0 30px 0;
+					}
+				}
 			}
 			.banner__visit{
 				padding: 15px 30px;
 				background: $dodgerBlue;
 				color: $white;
-				margin-right: 15px;
+				margin-right: 45px;
 				transition: linear 0.2s;
-								&:hover{
-									background: $monza;
-									
-								}
+					&:hover{
+						background: $monza;
+						
+					}
 			}
 			.banner__buy{
 				padding: 15px 30px;
@@ -99,11 +118,16 @@ export default {
 				color: $white;
 				border: 3px solid rgba(128, 128, 128, 0.435);
 				transition: linear 0.2s;
-								&:hover{
-									background: $white;
-									color: $codGray;
-									
-								}
+					&:hover{
+						background: $white;
+						color: $codGray;
+						
+					}
+				@media screen and (max-width: 1050px) {
+					&{
+						margin-top: 30px ;
+					}
+				}		
 			}
 			.banner__play{
 				position: absolute;
@@ -118,6 +142,16 @@ export default {
 					&:hover{
 						color: $monza;
 					}
+					@media screen and (max-width: 1050px) {
+							&{
+								transform: translatey();
+								left: 20px;
+								top: 16%;
+								width: 50px;
+								height: 50px;
+								
+							}
+						}
 			
 			}
 			

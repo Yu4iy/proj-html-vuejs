@@ -39,10 +39,11 @@ export default {
 		background-size: cover;
 		width: 100%;
 		height: 670px;
-		background-position: right;
+		background-position:  right;
 		overflow: hidden;
 
 		.banner{
+			padding: 20px;
 			width: 100%;
 			height: 100%;
 			position: relative;
@@ -58,15 +59,27 @@ export default {
 				.form-banner__subtitle{
 					font-size: 1.375rem;
 					color: $monza;
+					@media screen and (max-width: 1050px) {
+					&{
+						font-size: 0.9rem;
+					}
+				}
 				}
 				.form-banner__title{
 					font-size: 2.8125rem;
 					color: $white;
 					margin: 30px 0;
+					@media screen and (max-width: 1050px) {
+					&{
+						margin: 15px 0;
+						font-size: 2.2rem;
+					}
+				}
 				}
 				.form-banner__form{
 					display: flex;
 					margin: 40px 0 ;
+					
 
 					input{
 						flex-grow: 1;

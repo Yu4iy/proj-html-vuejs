@@ -100,6 +100,13 @@ export default {
 		flex-direction: column;
 		max-width: 400px;
 		margin: -70px 20px 20px 20px;
+		@media screen and (max-width: 1320px) {
+					&{
+						margin-top: 20px ;
+					}
+					
+					
+		}	
 
 		
 		
@@ -115,7 +122,7 @@ export default {
 			box-shadow: 0px 2px 3px -1px #000000, 2px 1px 1px 3px rgba(0,0,0,0);
 
 			&:hover {
-				transform: scale(1.09);
+				transform: scale(1.04);
 				box-shadow: 0px 10px 13px -7px #000000, 10px 5px 4px 14px rgba(0,0,0,0);
 
 		}
@@ -135,8 +142,7 @@ export default {
 
 				}
 			}
-			img{
-			}
+			
 			.info{
 				text-align: start;
 				position: absolute;
@@ -163,6 +169,10 @@ export default {
 			flex-direction: column;
 			text-align: center;
 			width: 100%;
+			@media screen and (max-width: 1050px) {
+					margin: 60px 0 100px 0 ;
+
+				}	
 			.quote__txt{
 				font-size: 2.25rem;
 				line-height: 2.70rem;
@@ -170,6 +180,13 @@ export default {
 				color: $white;
 				font-weight: 600;
 				margin:  0 0 10px 0;
+				@media screen and (max-width: 1050px) {
+					font-size: 1.2rem;
+					line-height: 1.50rem;
+					padding: 0 10px;
+					max-width: 	600px;
+
+				}	
 			}
 			.profile{
 				display: flex;

@@ -24,8 +24,8 @@
 					</ul>
 				</div>
 
-				<div class="column column-adress">
-					<h2>Recent posts</h2>
+				<div class="column column-address">
+					<h2>Address</h2>
 					<address>
 						<div class="address">{{footerData.address}}</div>
 						<div class="mobile">Mobile: <a href="tel:1.800.000.000.0000">{{footerData.mobile}}</a></div>
@@ -72,17 +72,35 @@ export default {
 				width: calc(100% / 3);
 				min-width: 350px;
 				padding: 5px 15px;
+					@media screen and (max-width: 1250px) {
+						&{
+							margin-bottom: 50px ;
+						}
+					}
+				
 				h2{
 					text-transform: uppercase;
 					font-size: 15px;
 					margin-bottom: 40px;
+					@media screen and (max-width: 1250px) {
+						&{
+							margin-bottom: 10px ;
+						}
+					}
+					
 				}
 			}
 			.column-info{
+
 				p{
 					color: $silver;
 					line-height: 1.25rem;
 					margin: 50px 0;
+					@media screen and (max-width: 1250px) {
+						&{
+							margin: 10px 0;
+						}
+					}
 				}
 				i{
 					margin-left: 15px;
@@ -96,13 +114,14 @@ export default {
 				}
 			}
 			.column-posts{
+				order: 2;
 				ul{
 					li{
 						margin-bottom: 30px;
 					}
 				}
 			}
-			.column-adress{
+			.column-address{
 				.address{
 					color: $silver;
 					margin-bottom: 25px;

@@ -74,7 +74,8 @@ export default {
     getPosts(){
       this.posts = this.datas.posts
       
-    }
+    },
+
   }
 }
 </script>

@@ -69,6 +69,11 @@ export default {
       max-width: 300px;
       margin: 10px 10px;
       padding: 70px 40px;
+	@media screen and (max-width: 950px) {
+		&{
+			padding: 30px 30px;
+		}
+	}
      
     }
 	.services-card__logo{

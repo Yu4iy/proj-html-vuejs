@@ -83,8 +83,15 @@ export default {
 
 <style scoped lang="scss">
 	@import "@/styles/variables.scss";
+
 	.cards{
         padding: 100px 0 160px 0;
+		@media screen and (max-width: 950px) {
+			&{
+				padding: 0 0 20px 0;
+				
+				}
+		}
 
     >div{
         display: flex;
@@ -137,6 +144,11 @@ export default {
 				align-items: center;
 				width: 50%;
 				position: relative;
+				@media screen and (max-width: 1080px) {
+					&{
+						display: none;
+					}
+				}	
 				.poster__play{
 					position: absolute;
 					width: 100px;
@@ -155,18 +167,42 @@ export default {
 			.yt-ref{
 				width: 50%;
 				padding: 130px 100px 130px;
+				@media screen and (max-width: 1080px) {
+					&{
+						width: 100%;
+						padding: 40px;
+					}
+				}	
 				.yt-ref__desc{
 					font-size: 1.25rem;
 					color: $dodgerBlue;
+					@media screen and (max-width: 1080px) {
+						&{
+							font-size: 1rem;
+
+						}
+					}	
 				}
 				.yt-ref__title{
 					font-size: 2.8125rem;
 					margin: 50px 0 0 0;
+					@media screen and (max-width: 1080px) {
+						&{
+							font-size: 1.4rem;
+							margin: 10px 0 0 0 ;
+
+						}
+					}	
 				}
 				.yt-ref__profile{
 					display: flex;
 					align-items: center;
 					margin: 50px 0 40px 0;
+					@media screen and (max-width: 1080px) {
+						&{
+							margin: 15px 0 15px 0;
+						}
+					}	
 					img{
 						margin-right: 15px;
 					}
@@ -200,6 +236,12 @@ export default {
 				}
 				.yt-ref__txt{
 					color: gray;
+				@media screen and (max-width: 1080px) {
+						&{
+							max-width: 600px;
+						}
+				}	
+					
 
 					}
 				.yt-ref__btn{
@@ -211,6 +253,12 @@ export default {
 					&:hover{
 						background: rgb(189, 12, 12);
 					}
+					@media screen and (max-width: 1020px) {
+						&{
+							padding: 10px 20px;
+
+						}
+					}	
 				}
 
 			}
@@ -220,6 +268,12 @@ export default {
 				display: flex;
 				justify-content: space-between;
 				margin: 130px 0 0 0 ;
+				@media screen and (max-width: 1020px) {
+					&{
+						margin: 30px;
+
+					}
+				}
 				.title__show-btn{
 					border: none;
 					background: none;

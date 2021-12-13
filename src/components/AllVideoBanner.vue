@@ -54,6 +54,7 @@ export default {
 				}
 			}
 			.video-banner__title{
+				text-align: center;
 				font-size: 2.5rem;
 				color: $white;
 			}
