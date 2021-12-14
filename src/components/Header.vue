@@ -150,13 +150,16 @@ export default {
 								color: $silver;
 								background: none;
 								border: none;
+								font-size: 1.2rem;
 
 							}
 							.search{
 								color: $silver;
 								background: none;
 								border: none;
-								margin: 0 20px;								
+								margin: 0 20px;		
+								font-size: 1.2rem;
+
 							}
 							.burger{
 								display: none;
@@ -165,6 +168,8 @@ export default {
 								border: none;
 								margin: 0 20px;
 								transition: linear 0.2s;
+								font-size: 1.2rem;
+
 								&:hover{
 									color: $dodgerBlue ;
 								}
