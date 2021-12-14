@@ -85,4 +85,7 @@ export default {
 
 <style lang="scss">
 @import "@/styles/globals.scss";
+#app{
+  overflow: hidden;
+}
 </style>
