@@ -56,8 +56,20 @@ export default {
 		background-size: cover;
 		width: 100%;
 		height: 670px;
-		background-position: right ;
+		background-position: right;
 		overflow: hidden;
+		@media screen and (max-width: 1000px) {
+			&{
+				background-position: -300px 0 ;
+
+				}
+			}	
+					@media screen and (max-width: 600px) {
+							&{
+								background-position: -620px 0 ;
+			
+							}
+						}
 		
 
 		.banner{
