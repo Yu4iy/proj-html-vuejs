@@ -123,6 +123,10 @@ export default {
 					right: 20px;
 					font-size: 2rem;
 					color: $white;
+					transition: linear 0.1s;
+					&:hover{
+						color: $monza;
+					}
 					
 				}
 				}
@@ -160,6 +164,10 @@ export default {
 								background: none;
 								border: none;
 								margin: 0 20px;
+								transition: linear 0.2s;
+								&:hover{
+									color: $dodgerBlue ;
+								}
 
 								@media screen and (max-width: 950px) {
 									&{
@@ -202,57 +210,4 @@ export default {
 		}
 	}
 
-
-// .hamburger-menu {
-//     position: absolute;
-//     top: 0;
-//     left: 0;
-//     padding: 20px;
-//     width: 100%;
-//     height: 100%;
-//     min-width: 100vw;
-//     min-height: 100vh;
-//     background: #2B3F58;
-// 	z-index: 200;
-// }
-// .hamburger-menu ul {
-//     display: flex;
-//     height: 100%;
-//     flex-direction: column;
-//     justify-content: space-around;
-//     align-items: flex-start;
-//     list-style: none;
-// }
-// .hamburger-menu ul li a {
-//     color: white;
-//     text-decoration: none;
-//     font-size: 25px;
-//     border-bottom: 2px solid white;
-// }
-// .close {
-// 	display: block;
-//     position: absolute;
-//     right: 20px;
-//     top: 20px;
-//     color: white;
-//     font-size: 35px;
-//     text-decoration: none;}
-// @media screen and (max-width: 1000px)
-// {
-//     .header-right ul {
-//         display: none;
-//     }
-//     .header-right > a {
-//         display: block;
-//         height: 100%;
-//         line-height: 70px;
-//         float: right;
-//         color: lightgrey;
-//         font-size: 20px;
-//     }
-
-//     .hamburger-menu.active {
-//         display: block;
-//     }
-// }	
 </style>

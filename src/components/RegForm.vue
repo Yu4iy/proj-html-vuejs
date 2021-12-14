@@ -1,7 +1,7 @@
 <template>
 	<section>
-		<div class="banner box" v-scroll="handleScroll">
-			<div class="container">
+		<div class="banner">
+			<div class="container box" v-scroll="handleScroll">
 				<div class="wraper">
 					<h2 class="form-banner__subtitle">Join our mailing list today</h2>
 					<h3 class="form-banner__title">Insider offers & flash salesin your inbox every week</h3>
@@ -58,12 +58,13 @@ export default {
 			height: 100%;
 			position: relative;
 			background: linear-gradient(to right, #000000, #000000, #000000ce, #b9b9b900, #ffffff00);
-			transform: translateX(50px);
 			.container{
 				height: 100%;
 				display: flex;
 				flex-direction: column;
 				justify-content: center;
+				transform: translateX(50px);
+
 			}
 			.wraper{
 				max-width: 750px;
